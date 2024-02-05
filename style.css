@@ -1,0 +1,41 @@
+header {
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Mulish', sans-serif;
+}
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.travel{
+    color: rgb(255, 84, 0);
+}
+
+.nav-head {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 45px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.nav2 ul {
+    display: flex;
+    list-style-type: none;
+    gap: 44px;
+
+}
+
+.nav2 ul li a {
+    text-decoration: none;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    align-items: center;
+    margin: 0 auto;
+}
