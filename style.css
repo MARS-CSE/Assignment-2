@@ -8,7 +8,8 @@ header {
     align-items: center;
     gap: 16px;
 }
-.travel{
+
+.travel {
     color: rgb(255, 84, 0);
 }
 
@@ -39,3 +40,70 @@ nav {
     align-items: center;
     margin: 0 auto;
 }
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    height: 502px;
+    width: 100%;
+    font-family: Mulish;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding-top: 100px;
+}
+/* .footer img{
+    padding: 50px 0px;
+} */
+.footer .footer-title {
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+
+
+}
+
+.footer .footer-title .orange {
+    color: #FF5400;
+}
+
+footer .footer-desc {
+    color: #5A5A5D;
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 15px;
+}
+
+footer .logo {
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.foot-hr {
+    /* background: rgba(19, 19, 24, 0.10);
+    width: 70%;
+    height: 1px;
+    margin-top: 50px; */
+    width: 100%;
+  margin: 50px 0;
+  border: 1px solid rgba(19, 19, 24, 0.082);
+}
+
+.desc-bottom {
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 50px;
+}
+
