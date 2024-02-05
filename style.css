@@ -1,3 +1,31 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    width: 90%;
+    margin: 0 auto;
+    border: solid 1px;
+  }
+  
+  /* Variable */
+  :root {
+    --bgAccentColor: #ff5400;
+    --textAccentColor: #ffffff;
+  }
+  
+  /* Global Class */
+  .btn {
+    background-color: var(--bgAccentColor);
+    color: var(--textAccentColor);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
 header {
     /* font-family: 'Inter', sans-serif; */
     font-family: 'Mulish', sans-serif;
@@ -40,7 +68,127 @@ nav {
     align-items: center;
     margin: 0 auto;
 }
+/*Nav Ends */
 
+/* Banner */
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: solid 1px;
+    flex-direction: column;
+    background-image: linear-gradient(
+        180deg,
+        rgba(19, 19, 24, 0.8) 0%,
+        rgba(19, 19, 24, 0) 100%
+      ),
+      url("Images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 30px;
+  }
+  .banner-text {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .banner-title {
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--textAccentColor);
+    text-align: center;
+  }
+  .banner-desc {
+    font-size: 16px;
+    color: var(--textAccentColor);
+    text-align: center;
+  }
+  .banner-btn {
+    display: flex;
+    gap: 24px;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    border-radius: 8px;
+  }
+  .banner-btn .banner-btnn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: rgba(19, 19, 24, 0.5);
+    /* flex: 3; */
+    /* display: inline-flex; */
+  }
+  .banner-btn button:nth-child(1) {
+    /* padding: 5px 16px; */
+    flex: 2;
+  }
+  .banner-btn button:nth-child(2) {
+    /* padding: 16px 15px 16px 16px; */
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 50px; */
+  }
+  
+  .banner-btn button:nth-child(3) {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-btn button:nth-child(4) {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  /* Banner Ends */
+
+
+/* Popular */
+.popular {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px 0px 20px;
+  }
+  .popular ul {
+    padding: 0px 30px 0px;
+  }
+  .popular-desc {
+    color: #5a5a5d;
+  }
+  .popular div:nth-child(1) {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .popular div:nth-child(2) {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .popular div:nth-child(2) img {
+    width: 80%;
+    border-radius: 16px;
+/* Popular Ends */
+
+/* Choose Us */
+
+/* Choose Us Ends */
+
+
+/* Footer */
 footer {
     background: rgba(19, 19, 24, 0.05);
     height: 502px;
@@ -54,9 +202,7 @@ footer {
     gap: 16px;
     padding-top: 100px;
 }
-/* .footer img{
-    padding: 50px 0px;
-} */
+
 .footer .footer-title {
     color: #131318;
     font-size: 32px;
@@ -106,4 +252,4 @@ footer .logo {
     text-align: center;
     margin-top: 50px;
 }
-
+/* Footer Ends */
