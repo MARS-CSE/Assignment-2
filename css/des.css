@@ -1,0 +1,73 @@
+.destination {
+  padding: 50px 0 40px 50px;
+}
+#des-item-1 {
+  grid-area: des1;
+}
+#des-item-2 {
+  grid-area: des2;
+}
+#des-item-3 {
+  grid-area: des3;
+}
+#des-item-4 {
+  grid-area: des4;
+}
+#des-item-5 {
+  grid-area: des5;
+}
+#des-item-6 {
+  grid-area: des6;
+}
+#des-item-7 {
+  grid-area: des7;
+}
+.des-container {
+  display: grid;
+  grid-template-areas:
+    "des1 des1 des1 des2 des2 des2"
+    "des3 des3 des4 des4 des4 des5"
+    "des7 des7 des6 des6  des6 des6";
+  width: 100%;
+  grid-gap: 16px;
+}
+.des-item {
+  width: 100%;
+  height: 225px;
+  position: relative;
+}
+.des-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--textAccentColor);
+  font-family: Mulish;
+}
+.destination img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .destination {
+    padding: 50px 0 40px 0px;
+  }
+  .des-container {
+    display: grid;
+    grid-template-areas:
+      "des1"
+      "des2"
+      "des3"
+      "des4"
+      "des5"
+      "des6"
+      "des7";
+    width: 100%;
+    grid-gap: 20px;
+  }
+  .des-item {
+    width: 100%;
+    height: 176px;
+    position: relative;
+  }
+}

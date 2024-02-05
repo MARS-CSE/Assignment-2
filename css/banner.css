@@ -1,0 +1,103 @@
+.banner {
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  flex-direction: column;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("../Images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 30px;
+  border-radius: 16px;
+  height: 500px;
+}
+.banner-text {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.banner-title {
+  font-size: 64px;
+  font-weight: bold;
+  color: var(--textAccentColor);
+  text-align: center;
+}
+.banner-desc {
+  font-size: 16px;
+  color: var(--textAccentColor);
+  text-align: center;
+}
+.banner-btn {
+  display: flex;
+  gap: 24px;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  border-radius: 8px;
+}
+.banner-btn .banner-btnn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: rgba(19, 19, 24, 0.5);
+}
+.banner-btn button:nth-child(1) {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+}
+.banner-btn button:nth-child(2) {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-btn button:nth-child(3) {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-btn button:nth-child(4) {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+@media screen and (max-width: 600px) {
+  .banner-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 16px;
+    border-radius: 8px;
+  }
+  .banner-text {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .banner-title {
+    font-size: 44px;
+    font-weight: bold;
+    color: var(--textAccentColor);
+    text-align: center;
+  }
+}

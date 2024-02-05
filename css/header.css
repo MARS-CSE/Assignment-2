@@ -1,0 +1,77 @@
+header {
+  font-family: "Mulish", sans-serif;
+}
+header .active a {
+  color: var(--bgAccentColor);
+}
+.nav1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.travel {
+  color: var(--bgAccentColor);
+}
+
+.nav-head {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.nav2 ul {
+  display: flex;
+  list-style-type: none;
+  gap: 44px;
+}
+
+.nav2 ul li a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+.nav2 .menu button {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .nav2 {
+    position: relative;
+  }
+
+  .nav2 .menu {
+    position: relative;
+  }
+  .nav2 .menu button {
+    display: block;
+  }
+  .nav-btn {
+    border: none;
+    background: none;
+    padding: 15px;
+    font-size: 18px;
+  }
+  .nav2 ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 24px;
+    position: absolute;
+    right: 0;
+    top: -400px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav2 :hover .dropdown {
+    top: 40px;
+    background-color: antiquewhite;
+  }
+}
