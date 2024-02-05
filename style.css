@@ -394,7 +394,7 @@ nav {
     transform: translate(-0%, -5%) rotate(310deg);
 }
 
-footer {
+/* footer {
     margin-top: 50px;
     padding: 110px 0 110px 0;
     background: rgba(19, 19, 24, 0.05);
@@ -442,6 +442,58 @@ footer {
   
   footer hr {
     width: 100%;
+    margin: 50px 0;
+    border: 1px solid rgba(19, 19, 24, 0.082);
+  } */
+
+  footer {
+    margin-top: 50px;
+    padding: 110px 0 110px 0;
+    background: rgba(19, 19, 24, 0.05);
+  }
+  footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  footer .logo img {
+    width: 40px;
+  }
+  footer .logo h1 {
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+  }
+  footer p {
+    max-width: 769px;
+    color: #5a5a5d;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 0 30px 0;
+  }
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  footer .social-icons a {
+    font-size: 30px;
+    color: #131318;
+  }
+  
+  footer hr {
+    width: 60%;
     margin: 50px 0;
     border: 1px solid rgba(19, 19, 24, 0.082);
   }
