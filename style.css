@@ -2,21 +2,22 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  }
-  body {
+}
+
+body {
     width: 90%;
     margin: 0 auto;
     border: solid 1px;
-  }
-  
-  /* Variable */
-  :root {
+}
+
+/* Variable */
+:root {
     --bgAccentColor: #ff5400;
     --textAccentColor: #ffffff;
-  }
-  
-  /* Global Class */
-  .btn {
+}
+
+/* Global Class */
+.btn {
     background-color: var(--bgAccentColor);
     color: var(--textAccentColor);
     font-weight: bold;
@@ -24,7 +25,7 @@
     outline: none;
     padding: 10px 20px;
     border-radius: 5px;
-  }
+}
 
 header {
     /* font-family: 'Inter', sans-serif; */
@@ -68,6 +69,7 @@ nav {
     align-items: center;
     margin: 0 auto;
 }
+
 /*Nav Ends */
 
 /* Banner */
@@ -80,78 +82,85 @@ nav {
     color: black;
     border: solid 1px;
     flex-direction: column;
-    background-image: linear-gradient(
-        180deg,
-        rgba(19, 19, 24, 0.8) 0%,
-        rgba(19, 19, 24, 0) 100%
-      ),
-      url("Images/banner.png");
+    background-image: linear-gradient(180deg,
+            rgba(19, 19, 24, 0.8) 0%,
+            rgba(19, 19, 24, 0) 100%),
+        url("Images/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     gap: 30px;
-  }
-  .banner-text {
+}
+
+.banner-text {
     width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
-  }
-  .banner-title {
+}
+
+.banner-title {
     font-size: 64px;
     font-weight: bold;
     color: var(--textAccentColor);
     text-align: center;
-  }
-  .banner-desc {
+}
+
+.banner-desc {
     font-size: 16px;
     color: var(--textAccentColor);
     text-align: center;
-  }
-  .banner-btn {
+}
+
+.banner-btn {
     display: flex;
     gap: 24px;
     width: 60%;
     background: rgba(255, 255, 255, 0.3);
     padding: 16px;
     border-radius: 8px;
-  }
-  .banner-btn .banner-btnn {
+}
+
+.banner-btn .banner-btnn {
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
     color: rgba(19, 19, 24, 0.5);
     /* flex: 3; */
     /* display: inline-flex; */
-  }
-  .banner-btn button:nth-child(1) {
+}
+
+.banner-btn button:nth-child(1) {
     /* padding: 5px 16px; */
     flex: 2;
-  }
-  .banner-btn button:nth-child(2) {
+}
+
+.banner-btn button:nth-child(2) {
     /* padding: 16px 15px 16px 16px; */
     flex: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* padding: 10px 50px; */
-  }
-  
-  .banner-btn button:nth-child(3) {
+}
+
+.banner-btn button:nth-child(3) {
     flex: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .banner-btn button:nth-child(4) {
+}
+
+.banner-btn button:nth-child(4) {
     flex: 3;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-  }
-  /* Banner Ends */
+}
+
+/* Banner Ends */
 
 
 /* Popular */
@@ -159,97 +168,211 @@ nav {
     display: flex;
     justify-content: space-around;
     padding: 50px 0px 0px 20px;
-  }
-  .popular ul {
+}
+
+.popular ul {
     padding: 0px 30px 0px;
-  }
-  .popular-desc {
+}
+
+.popular-desc {
     color: #5a5a5d;
-  }
-  .popular div:nth-child(1) {
+}
+
+.popular div:nth-child(1) {
     flex: 1;
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  .popular div:nth-child(2) {
+}
+
+.popular div:nth-child(2) {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-  }
-  .popular div:nth-child(2) img {
+}
+
+.popular div:nth-child(2) img {
     width: 80%;
     border-radius: 16px;
-/* Popular Ends */
-
-/* Choose Us */
-
-/* Choose Us Ends */
+    /* Popular Ends */
 
 
-/* Footer */
-footer {
-    background: rgba(19, 19, 24, 0.05);
-    height: 502px;
-    width: 100%;
-    font-family: Mulish;
-}
+    /* Choose Us */
+    .choose {
+        width: 100%;
+        padding: 50px 0 50px 50px;
+    }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    padding-top: 100px;
-}
+    .choose-heading {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-.footer .footer-title {
-    color: #131318;
-    font-size: 32px;
-    font-weight: 800;
+    .item-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .item-container .item {
+        width: 45%;
+        border-radius: 16px;
+        padding: 20px;
+        padding-right: 25px;
+    }
+
+    .item-container .item:nth-child(1) {
+        background-color: #fffbf7;
+    }
+
+    .item-container .item:nth-child(2) {
+        background-color: #f4fdff;
+    }
+
+    .item-container .item:nth-child(3) {
+        background-color: #fffbf7;
+    }
+    /* Choose Us Ends */
 
 
-}
+    /* Deals */
+    .deals {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 24px;
+      }
+      .deals .deals-heading {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .deals .item {
+        position: relative;
+        width: 100%;
+      }
+      .deals .item .deals-item-content {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        padding: 50px 40px;
+        background-color: #f7fbfe;
+        opacity: 0.8;
+        width: 50%;
+        transform: translate(-10%, -50%);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-height: 370px;
+        justify-content: center;
+      }
+      .deals .item .deals-item-content-left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        padding: 50px 40px;
+        background-color: #f7fbfe;
+        opacity: 0.8;
+        width: 50%;
+        transform: translate(10%, -50%);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-height: 370px;
+        justify-content: center;
+      }
+      
+      .deals .item img {
+        width: 100%;
+      }
+      .time {
+        display: flex;
+        gap: 10px;
+        color: var(--bgAccentColor);
+      }
+      .deals .deals-item-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .deals-price {
+        color: var(--bgAccentColor);
+      }
+      .deals .deals-time-icon {
+        margin-right: 10px;
+      }
+    /* Deals Ends */
 
-.footer .footer-title .orange {
-    color: #FF5400;
-}
 
-footer .footer-desc {
-    color: #5A5A5D;
-    text-align: center;
-    width: 750px;
-    margin: 0 auto;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    margin-top: 15px;
-}
+    /* Footer */
+    footer {
+        background: rgba(19, 19, 24, 0.05);
+        height: 502px;
+        width: 100%;
+        font-family: Mulish;
+    }
 
-footer .logo {
-    margin-top: 33px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        padding-top: 100px;
+    }
 
-.foot-hr {
-    /* background: rgba(19, 19, 24, 0.10);
+    .footer .footer-title {
+        color: #131318;
+        font-size: 32px;
+        font-weight: 800;
+
+
+    }
+
+    .footer .footer-title .orange {
+        color: #FF5400;
+    }
+
+    footer .footer-desc {
+        color: #5A5A5D;
+        text-align: center;
+        width: 750px;
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-top: 15px;
+    }
+
+    footer .logo {
+        margin-top: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .foot-hr {
+        /* background: rgba(19, 19, 24, 0.10);
     width: 70%;
     height: 1px;
     margin-top: 50px; */
-    width: 100%;
-  margin: 50px 0;
-  border: 1px solid rgba(19, 19, 24, 0.082);
-}
+        width: 100%;
+        margin: 50px 0;
+        border: 1px solid rgba(19, 19, 24, 0.082);
+    }
 
-.desc-bottom {
-    color: #131318;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: center;
-    margin-top: 50px;
-}
-/* Footer Ends */
+    .desc-bottom {
+        color: #131318;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* Footer Ends */
